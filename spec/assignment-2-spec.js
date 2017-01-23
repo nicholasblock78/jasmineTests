@@ -1,11 +1,4 @@
 describe("Assignment 2", function() {
-  beforeEach(function() {
-    var Rect1 = new Rectangle(20,30,40,11);
-    var Rect2 = new Rectangle(50,22,26,36);
-    var Rect3 = new Rectangle(10,10,30,20);
-    var Rect4 = new Rectangle(45,10,12,4);
-  });
-
   describe("Find all 4 corners of rectangle", function() {
     it("Rectangle 1 has these 4 corners", function() {
       var Rect1 = new Rectangle(20,30,40,11);

@@ -1,4 +1,4 @@
-
+//First Function
 var FirstArray = function(array) {
   this.arrInput = array;
 }
@@ -10,6 +10,7 @@ FirstArray.prototype.greatestDifference1 = function() {
   return sortedArr[endIndex] - sortedArr[0];
 }
 
+//Second Function
 var SecondArray = function(array) {
   this.arrInput = array;
   this.smallestInt;
@@ -30,11 +31,3 @@ SecondArray.prototype.greatestDifference2 = function() {
   }
   return this.largestInt - this.smallestInt;
 }
-
-//What is their difference in Big-O? Check bigocheatsheet.com to find out
-//The built-in sort method is really nice and concise, but it comes at a
-//price. The Big-O is most likely Ω(n log(n)) for the built-in sort method
-//While the second method in a sense is manually building out our own sort
-//method, it drops all the bells and whistles and uses only what we need.
-//With one FOR loop, the Big O is only O(n). The second loop without the log
-//is simpler and faster. 

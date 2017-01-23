@@ -43,6 +43,4 @@ Rectangle.prototype.intersectsWith = function(rect) {
   else {
     return true;
   }
-
-
 }

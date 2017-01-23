@@ -25,7 +25,4 @@ var yourAssignment3 = function(str) {
 }
 return h; }
 
-//Dont forget to run this code through JSLint
-//Refactor into ES6 code and transpile w Babel
-
 //parseInt(0)
