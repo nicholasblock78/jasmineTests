@@ -9,6 +9,7 @@ var Rectangle = function(x,y,width,height) {
 }
 
 //4 corners are returned in [TL, BL, TR, BR] => [[x,y],[x,y],[x,y],[x,y]]
+//***This is where I first started out
 Rectangle.prototype.findCorners = function() {
   var corners = [];
   corners[0] = [this.x, this.y]; //TL
@@ -23,6 +24,25 @@ Rectangle.prototype.findCorners = function() {
 //first check x coorindates for overlap
 //IF overlap, then check y coordinates
 //IF Both x & y overlap, then RETURN TRUE
+
+//As writing out my pseudocode, I realized that I only needed to check the cases
+//that would be false. If not caught by false thus means has to intersect
 Rectangle.prototype.intersectsWith = function(rect) {
+  if (rect.x < this.x && rect.x + rect.width < this.x) {
+    return false;
+  }
+  else if (rect.x > this.x + this.width) {
+    return false;
+  }
+  else if (rect.y < this.y && rect.y + rect.height < this.y) {
+    return false;
+  }
+  else if (rect.y > this.y + this.height) {
+    return false;
+  }
+  else {
+    return true;
+  }
+
 
 }
