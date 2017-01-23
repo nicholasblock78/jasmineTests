@@ -1,4 +1,4 @@
-describe("Assignment 3", function() {
+xdescribe("Assignment 3", function() {
   it("Function should return correct number for given string", function() {
     expect(yourAssignment3("leepdag")).toEqual(680131662011);
   });

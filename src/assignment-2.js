@@ -18,3 +18,11 @@ Rectangle.prototype.findCorners = function() {
   this.corners = corners;
   return corners;
 }
+
+//Because of screen X and Y coordinates can't be negative!
+//first check x coorindates for overlap
+//IF overlap, then check y coordinates
+//IF Both x & y overlap, then RETURN TRUE
+Rectangle.prototype.intersectsWith = function(rect) {
+
+}
